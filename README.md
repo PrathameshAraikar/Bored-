@@ -14,19 +14,19 @@ BORED?? is a simple iOS app that generates random activities for users who are f
 ## Code Overview
 
 ### DataModel
-The DataModel struct defines the structure of the data fetched from the Bored API.
+The `DataModel` struct defines the structure of the data fetched from the Bored API.
 
 ### DownloadData
-The DownloadData class is an ObservableObject that fetches data from the Bored API using URLSession. It stores the fetched data in an array of DataModel objects and publishes the array using the @Published property wrapper.
+The `DownloadData` class is an `ObservableObject` that fetches data from the Bored API using `URLSession`. It stores the fetched data in an array of `DataModel` objects and publishes the array using the `@Published` property wrapper.
 
 ### FinalView
-The FinalView struct defines the main view of the app. It contains a DownloadData instance, a stepper for selecting the number of participants, and a button for generating the activity suggestion. It also contains two subviews: TitleView and BodyView.
+The `FinalView` struct defines the main view of the app. It contains a `DownloadData` instance, a stepper for selecting the number of participants, and a button for generating the activity suggestion. It also contains two subviews: `TitleView` and `BodyView`.
 
 ### TitleView
-The TitleView struct defines a view for displaying the title of a section.
+The `TitleView` struct defines a view for displaying the title of a section.
 
 ### BodyView
-The BodyView struct defines a view for displaying the body text of a section.
+The `BodyView` struct defines a view for displaying the body text of a section.
 
 ## Credits
 This app was created by Prathamesh Araikar. The app makes use of the Bored API (https://www.boredapi.com/) to fetch activity suggestions.
